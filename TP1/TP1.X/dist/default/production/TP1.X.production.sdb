@@ -1,0 +1,233 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F452 ]
+[d frameptr 4065 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"76 E:\micro_info\LE2_TP1\TP1.X\test5.c
+[v _myHighint myHighint `IIH(v  1 e 1 0 ]
+"150
+[v _main main `(v  1 e 1 0 ]
+"188
+[v _init init `(v  1 e 1 0 ]
+"199
+[v _setNumber setNumber `(v  1 e 1 0 ]
+"206
+[v _wait wait `(v  1 e 1 0 ]
+"212
+[v _initTIMER0 initTIMER0 `(v  1 e 1 0 ]
+"228
+[v _initINT0 initINT0 `(v  1 e 1 0 ]
+"236
+[v _initINT1 initINT1 `(v  1 e 1 0 ]
+[s S219 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"232 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f452.h
+[s S228 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 CCP2 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S237 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2A 1 0 :1:3 
+]
+[s S240 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S243 . 1 `S219 1 . 1 0 `S228 1 . 1 0 `S237 1 . 1 0 `S240 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES243  1 e 1 @3969 ]
+"322
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"489
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+[s S141 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"520
+[s S150 . 1 `uc 1 PSP0 1 0 :1:0 
+`uc 1 PSP1 1 0 :1:1 
+`uc 1 PSP2 1 0 :1:2 
+`uc 1 PSP3 1 0 :1:3 
+`uc 1 PSP4 1 0 :1:4 
+`uc 1 PSP5 1 0 :1:5 
+`uc 1 PSP6 1 0 :1:6 
+`uc 1 PSP7 1 0 :1:7 
+]
+[s S159 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S162 . 1 `S141 1 . 1 0 `S150 1 . 1 0 `S159 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES162  1 e 1 @3971 ]
+"1408
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1648
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"1888
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S193 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"4809
+[s S200 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S204 . 1 `S193 1 . 1 0 `S200 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES204  1 e 1 @4053 ]
+"4866
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"4873
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S75 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 INT2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1IE 1 0 :1:3 
+`uc 1 INT2IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1IP 1 0 :1:6 
+`uc 1 INT2IP 1 0 :1:7 
+]
+"5165
+[s S84 . 1 `uc 1 INT1F 1 0 :1:0 
+`uc 1 INT2F 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1E 1 0 :1:3 
+`uc 1 INT2E 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1P 1 0 :1:6 
+`uc 1 INT2P 1 0 :1:7 
+]
+[u S93 . 1 `S75 1 . 1 0 `S84 1 . 1 0 ]
+[v _INTCON3bits INTCON3bits `VES93  1 e 1 @4080 ]
+[s S24 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"5344
+[s S33 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S42 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S46 . 1 `S24 1 . 1 0 `S33 1 . 1 0 `S42 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES46  1 e 1 @4082 ]
+"58 E:\micro_info\LE2_TP1\TP1.X\test5.c
+[v _temps temps `ui  1 e 2 0 ]
+[v _mili mili `ui  1 e 2 0 ]
+[v _centi centi `ui  1 e 2 0 ]
+[v _unite unite `ui  1 e 2 0 ]
+[v _dizaine dizaine `ui  1 e 2 0 ]
+[v _stop stop `ui  1 e 2 0 ]
+"60
+[v _number number `[10]uc  1 e 10 0 ]
+"150
+[v _main main `(v  1 e 1 0 ]
+{
+"175
+} 0
+"206
+[v _wait wait `(v  1 e 1 0 ]
+{
+"210
+} 0
+"199
+[v _setNumber setNumber `(v  1 e 1 0 ]
+{
+[v setNumber@x x `i  1 p 2 5 ]
+[v setNumber@afficheur afficheur `uc  1 p 1 7 ]
+"204
+} 0
+"212
+[v _initTIMER0 initTIMER0 `(v  1 e 1 0 ]
+{
+"226
+} 0
+"236
+[v _initINT1 initINT1 `(v  1 e 1 0 ]
+{
+"241
+} 0
+"228
+[v _initINT0 initINT0 `(v  1 e 1 0 ]
+{
+"234
+} 0
+"188
+[v _init init `(v  1 e 1 0 ]
+{
+"197
+} 0
+"76
+[v _myHighint myHighint `IIH(v  1 e 1 0 ]
+{
+"143
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___lwmod@dividend dividend `ui  1 p 2 0 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+"25
+} 0
