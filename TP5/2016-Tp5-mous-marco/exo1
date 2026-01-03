@@ -1,0 +1,86 @@
+// BENCHIHA SALENGRO
+
+#include <p18C452.h>//inclus la librairie contenant les d?finitions des bits et des registres
+
+#pragma config OSC = XT // oscillatateur ext?rieur
+#pragma config WDT = OFF // pas de chien de garde
+
+void traiter_it(void);// declaration programme gestion interruption
+void init (void);
+#define PORTBbits.RB3 = e;
+#define PORTBbits.RB4 = RW;
+#define PORTBbits.RB5 = Rs;
+
+
+#pragma  code it=0x08  //adresse interruption haute
+       
+void saut_sur_spit(void)
+{_asm
+   	goto traiter_it
+ _endasm
+}
+
+
+#pragma code
+// Sous programmes 
+
+
+//pour chaque sous programme commenter fonction
+
+
+//programme d'initialisation
+void init(void)
+{		
+}
+
+
+char ReadLCD()
+{
+	unsigned char etat;
+	TRISD = 0xFF; // on met le port en entrée
+	do{
+		Rs = 0; // On veut lire un état donc on se met en mode commande
+		RW= 1; // read/write en sortie
+		e = 1;
+		e = 1;
+		e = 1;
+		etat = PORTD;
+		e = 0;
+		e = 0;
+		e = 0;
+		RW = 0;
+	}
+	while((ReadLCD()&0880) != 0800);
+	return etat;
+}
+
+void writeLCD(unsigned char data, param)
+{
+	if(param!=2)
+		while((ReadLCD()&& 0x80)==0x80);
+	if(param && 0x01)==0x00)
+		RS = 0;
+	else
+		RS = 1;
+}
+//programme qui traite les interruptions
+#pragma interrupt traiter_it
+void  traiter_it(void)
+{		
+}
+
+
+
+#pragma code
+// programme principal
+ void main(void) 
+{
+ init();
+unsigned char data = 'E';
+int param = 0;
+for(;;) //effectue le programme suivant en boucle
+	{
+		writeLCD(data, param);
+		ReadLCD()		
+	}
+}
